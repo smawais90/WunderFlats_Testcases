@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-12T14:45:12.416Z",
+    "end": "2021-12-12T14:45:12.502Z",
+    "duration": 86,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2d3fc33c-ca3c-4504-ab79-a6805c85bff4",
+      "title": "",
+      "fullFile": "cypress/integration/palindrome_test_cases/check_palindrome.spec.js",
+      "file": "cypress/integration/palindrome_test_cases/check_palindrome.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b8c79e54-20ed-4bf4-afdb-99ec760c9435",
+          "title": "pelindrome test cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should return true for the pelindrome check",
+              "fullTitle": "pelindrome test cases should return true for the pelindrome check",
+              "timedOut": null,
+              "duration": 40,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const res = fn.palindrome(strings.pel_string);\nexpect(res).to.be.true;",
+              "err": {},
+              "uuid": "c42f38b1-713f-4c72-83dc-c23dc1f5d172",
+              "parentUUID": "b8c79e54-20ed-4bf4-afdb-99ec760c9435",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should return false for the pelindrome check",
+              "fullTitle": "pelindrome test cases should return false for the pelindrome check",
+              "timedOut": null,
+              "duration": 13,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const res = fn.palindrome(strings.non_pel_string);\nexpect(res).to.be.false;",
+              "err": {},
+              "uuid": "67a6aed2-27ec-447f-a4d7-00748ee301eb",
+              "parentUUID": "b8c79e54-20ed-4bf4-afdb-99ec760c9435",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c42f38b1-713f-4c72-83dc-c23dc1f5d172",
+            "67a6aed2-27ec-447f-a4d7-00748ee301eb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 53,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

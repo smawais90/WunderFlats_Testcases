@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-12-12T14:01:10.664Z",
+    "end": "2021-12-12T14:01:26.963Z",
+    "duration": 16299,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b9afbc9a-7277-40d6-8813-76b89cf638e9",
+      "title": "",
+      "fullFile": "cypress/integration/profile_tab_test_cases/edit_name.spec.js",
+      "file": "cypress/integration/profile_tab_test_cases/edit_name.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6fec5c99-0486-4bc7-977d-534a723dc261",
+          "title": "Edit name Test cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should sign in successfully",
+              "fullTitle": "Edit name Test cases it should sign in successfully",
+              "timedOut": null,
+              "duration": 16205,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(_selectors.selector.profile_url);\n(0, _edit_name.validate_name)(_data.data.first_name, _data.data.last_name);\n(0, _edit_name.edit_name)(_data.data.edited_f_name, _data.data.edited_l_name);\n(0, _edit_name.validate_name)(_data.data.edited_f_name, _data.data.edited_l_name);\n(0, _edit_name.edit_name)(_data.data.first_name, _data.data.last_name);",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Cannot read properties of undefined (reading 'ready')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Edit name Test cases`",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress. It was caused by an unhandled promise rejection.\n\n  > Cannot read properties of undefined (reading 'ready')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Edit name Test cases`\n    at https://en-hiring.wunderflats.xyz/public/AuthPage-AuthPage.d473ef7b1d2b9840ca35.js:2:25884\n    at new Promise (<anonymous>)\n    at t.default (https://en-hiring.wunderflats.xyz/public/AuthPage-AuthPage.d473ef7b1d2b9840ca35.js:2:25845)\n    at onSubmit (https://en-hiring.wunderflats.xyz/public/AuthPage-AuthPage.d473ef7b1d2b9840ca35.js:2:5556)\n    at Object.je (https://en-hiring.wunderflats.xyz/public/vendor.ff377e565298f8c2ca92.js:2:35617)\n    at Ke (https://en-hiring.wunderflats.xyz/public/vendor.ff377e565298f8c2ca92.js:2:35771)\n    at https://en-hiring.wunderflats.xyz/public/vendor.ff377e565298f8c2ca92.js:2:53931\n    at xr (https://en-hiring.wunderflats.xyz/public/vendor.ff377e565298f8c2ca92.js:2:54025)\n    at Cr (https://en-hiring.wunderflats.xyz/public/vendor.ff377e565298f8c2ca92.js:2:54439)\n    at https://en-hiring.wunderflats.xyz/public/vendor.ff377e565298f8c2ca92.js:2:60074",
+                "diff": null
+              },
+              "uuid": "65ae91fc-f5ae-4012-8208-30c667b43022",
+              "parentUUID": "6fec5c99-0486-4bc7-977d-534a723dc261",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "65ae91fc-f5ae-4012-8208-30c667b43022"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16205,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
